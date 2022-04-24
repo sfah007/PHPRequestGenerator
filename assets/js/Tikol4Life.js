@@ -17,7 +17,7 @@ function generate(){
     playClick();
     $("#r_results").text("$ch = curl_init();\n");
     $("#r_results").append("curl_setopt($ch, CURLOPT_URL, '"+ r_url +"');\n");
-    $("#r_results").append("curl_setopt($ch, CURLOPT_COOKIEJAR, "");\n");
+    $("#r_results").append("curl_setopt($ch, CURLOPT_COOKIEJAR, '""');\n");
     $("#r_results").append("curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);\n");
     if(r_method == "POST"){
         $("#r_results").append("curl_setopt($ch, CURLOPT_POST, 1);\n");
